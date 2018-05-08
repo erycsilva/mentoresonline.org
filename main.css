@@ -23,3 +23,40 @@ body {
   position: absolute;
   top: -3000000px;
 }
+
+/**
+ * Typography Settings
+ */
+
+/* Titles */
+.title {
+  font-family: var(--title-font-family);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: var(--title-line-height);
+}
+.title.--big { font-size: var(--title-font-size); }
+.title.--normal { font-size: calc(var(--title-font-size) * .6); }
+.title.--small { font-size: calc(var(--title-font-size) * .3); }
+
+/* Text */
+.text {
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
+  font-weight: 300;
+}
+.text.--normal { font-size: var(--base-font-size); }
+.text.--small { font-size: calc(var(--base-font-size) * .8); }
+
+/* Links */
+.link {
+  display: inline-block;
+  font-weight: 400;
+}
+.--button {
+  font-family: var(--title-font-family);
+  font-size: calc(var(--base-font-size) * .8);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
