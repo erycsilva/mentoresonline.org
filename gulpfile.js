@@ -25,9 +25,6 @@ var critical = require('critical').stream;
 // BrowserSync Reload
 var reload = bs.reload;
 
-// Project URL
-var projURL = 'https://mentoresonline-site-2018.test';
-
 // My Paths
 var srcRoot = './src/',
   buildRoot = './public/';
@@ -176,7 +173,7 @@ gulp.task('watch_views', ['views', 'videos'], reload);
 // Watch all files
 gulp.task('watch', function() {
   bs({
-    proxy: projURL,
+    server: buildRoot,
     files: [srcRoot + '**/**/**/**/*', buildRoot + '**/**/**/**/*'],
   });
 
