@@ -1,0 +1,68 @@
+.cover {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-height: 100%;
+  height: 110vh;
+
+  padding-right: calc((100vw - 1300px) / 2);
+  padding-left: calc((100vw - 1300px) / 2);
+
+  background-color: #222222;
+  background-size: cover;
+  background-position: top center;
+
+  @media screen and (min-height: 1000px) {
+    max-height: 1000px;
+  }
+
+  .play-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.cover-video {
+  max-width: 40%;
+
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  z-index: 1;
+
+  &--category {
+    max-width: 140px;
+
+    margin-bottom: 1.2rem;
+
+    opacity: .8;
+  }
+
+  &--title {
+    font-family: $font-family--title;
+    font-size: 5.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: .9;
+
+    margin-bottom: 1.2rem;
+
+    color: white;
+  }
+
+  &--description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: white;
+    opacity: .8;
+  }
+}
