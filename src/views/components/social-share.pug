@@ -1,0 +1,25 @@
+-
+  var socials = [
+    {
+      name: "instagram",
+    },{
+      name: "facebook",
+    },{
+      name: "twitter",
+      // Tweet Share Button Parameters https://dev.twitter.com/web/tweet-button/parameters
+      url: "https://twitter.com/share?url=https%3A%2F%2Fmentoresonline.org&",
+      via: "via=mentoresonline&",
+      related: "related=twitterapi%2Ctwitter&",
+      hashtags: "hashtags=example%2Cdemo&",
+      text: "text=custom%20share%20text",
+    },{
+      name: "whatsapp",
+    },
+  ]
+
+mixin socialShare(item)
+  .social-share(style="background-image: url("+item.bg+");")
+    each social in socials
+      a(href=social.url + (social.via ? social.via : '') + (social.related ? social.related : '') + (social.hashtags ? social.hashtags : '') + (social.text ? social.text : ''), title="Compartilhe no " + social.name, target="_blank")#quoteShare.social-share--link
+        img.social-share--icon(src="/img/icons/icon-share--" + social.name + ".svg")
+        span.social-share--text Compartilhar
