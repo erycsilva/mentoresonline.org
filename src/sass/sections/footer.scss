@@ -1,0 +1,54 @@
+.footer {
+
+  padding: 5rem calc((100vw - 1300px) / 2);
+
+  background: radial-gradient(212.50px at 50% 50%, #141517 0%, #070707 100%);
+
+  .footer-newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--title {
+      font-family: $font-family--title;
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      margin-bottom: 1rem;
+
+      color: white;
+    }
+
+    &--form {
+      max-width: 900px;
+      width: 100%;
+
+      margin-bottom: 6rem;
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    &--copyright {
+      display: flex;
+      
+      p {
+        font-size: .9rem;
+        
+        margin-left: 10px;
+
+        color: white;
+
+        opacity: .8;
+      }
+    }
+
+    &--social {
+      display: flex;
+    }
+  }
+}
