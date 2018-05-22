@@ -130,6 +130,14 @@ textarea {
 }
 
 /**
+ * Remove border from fieldset
+ */
+
+ fieldset {
+   border: 0;
+ }
+
+/**
  * Pointer cursor for buttons
  */
 
