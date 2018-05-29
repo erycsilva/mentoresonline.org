@@ -2,4 +2,8 @@
   img {
     max-width: 60px;
   }
+
+  &:hover img {
+    animation: shine 800ms ease infinite alternate;
+  }
 }
