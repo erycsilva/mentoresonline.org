@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: absolute;
   z-index: 999;
 
   display: flex;
@@ -9,4 +9,21 @@
   width: 100%;
 
   padding: 2em calc((100vw - 1300px) / 2);
+
+  &.--scrolled {
+    position: fixed;
+
+    padding: 1em calc((100vw - 1300px) / 2);
+
+    background-color: white;
+    box-shadow: 0 12px 24px rgba(black, .12);
+
+    animation: slideIn ease 1;
+    animation-fill-mode: forwards;
+    animation-duration: 260ms;
+
+    .nav {
+      color: black;
+    }
+  }
 }
