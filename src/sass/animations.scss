@@ -25,3 +25,12 @@
     transform: scale(1.1);
   }
 }
+
+@keyframes bounceDown {
+  from {
+    transform: translate(-50%, 0);
+  }
+  to {
+    transform: translate(-50%, 10px);
+  }
+}
