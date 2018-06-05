@@ -1,0 +1,180 @@
+#sobre.page {
+
+  .sobre-cover {
+    min-height: 700px;
+    height: 100vh;
+    max-height: 900px;
+
+    padding-top: 180px;
+    padding-right: calc((100vw - 1300px) / 2);
+    padding-left: calc((100vw - 1300px) / 2);
+
+    background: radial-gradient(1969.54px at 50% 23.06%, #FFFFFF 0%, #F2F5F7 100%);
+    background: url(/img/page-sobre/about-page-bg--cover.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &--title {
+      font-family: $font-family--title;
+      font-size: 5rem;
+      font-weight: 800;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &--subtitle {
+      font-family: $font-family--text;
+      font-size: 1.2rem;
+      text-align: center;
+
+      margin-bottom: 2rem;
+      
+      color: $color--gray;
+    }
+  }
+
+  .sobre-projeto {
+    padding: 6rem;
+    padding-right: calc((100vw - 900px) / 2);
+    padding-left: calc((100vw - 900px) / 2);
+
+    background-image: url('/img/page-sobre/about-page-bg--about.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &--text {
+      font-family: $font-family--text;
+      font-size: 1.4rem;
+      text-align: center;
+      line-height: 2;
+
+      color: white;
+
+      span {
+        color: $color--red;
+      }
+    }
+  }
+
+  .sobre-categorias {
+    position: relative;
+
+    padding-top: 160px;
+    padding-bottom: 100px;
+    padding-right: calc((100vw - 1300px) / 2);
+    padding-left: calc((100vw - 1300px) / 2);
+
+    background: radial-gradient(1969.54px at 50% 23.06%, #FFFFFF 0%, #F2F5F7 100%);
+
+    #videoCardBG {
+      position: absolute;
+      
+      top: 310px;
+      right: 0;
+      bottom: 0;
+      left: 60%;
+      z-index: 0;
+
+      background: url('/img/page-sobre/about-page-bg--videos-cut.png');
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &--title {
+      font-family: $font-family--title;
+      font-size: 4rem;
+      font-weight: 800;
+      text-align: center;
+      text-transform: uppercase;
+
+      margin: 0 calc((100vw - 1000px) / 2);
+    }
+    &--subtitle {
+      font-family: $font-family--text;
+      font-size: 1.2rem;
+      text-align: center;
+      
+      margin: 0 calc((100vw - 1000px) / 2);
+      margin-bottom: 2rem;
+      
+      color: $color--gray;
+    }
+
+    &--list {
+      max-width: 50%;
+      
+      padding: 100px 0;
+    }
+
+    &--link {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .category-info {
+      margin-bottom: 2rem;
+
+      &--title {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        left: -999999px;
+      }
+      
+      &--logo {
+        max-width: 180px;
+
+        margin-bottom: 1rem;
+      }
+
+      &--description {
+        font-weight: 500;
+        color: $color--gray;
+      }
+    }
+  }
+
+  .sobre-quote {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: calc((100vw - 1100px) / 2);
+    padding-left: calc((100vw - 1100px) / 2);
+
+    background: url('/img/page-sobre/about-page-bg--quote.jpg');
+    background-size: cover;
+    background-position: center;
+
+    &-message {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+
+      color: white;
+
+      &--text {
+        display: block;
+
+        font-family: $font-family--quote;
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 1.4;
+        
+        margin-bottom: 1.4rem;
+      }
+
+      &--author {
+        font-family: $font-family--text;
+        font-size: 1rem;
+        font-weight: 600;
+        font-style: normal;
+        
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
