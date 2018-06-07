@@ -3,6 +3,17 @@ html
   include ../includes/vars.pug
   include ../includes/data.pug
   block pageVars
+    //----------------------------------
+    //-
+    //-
+    //-   MUST CREATE A "PAGE" VARIABLE
+    //-
+    //-   Should Have:
+    //-   * Name {String}: The name of the Page / Video
+    //-   * Video {Object}: The specific object from the [VIDEOS] Object.
+    //-
+    //----------------------------------
+
   include ../includes/head.pug
   include ../includes/components.pug
   
@@ -58,10 +69,10 @@ html
               h5.video-info-profile--title Palestrante e Escritor
               p.video-info-profile--quote "Tudo começou quando eu. Tudo começou quando eu. Tudo começou quando eu. Tudo começou quando eu."
               nav.video-info-profile--social
-                if profiles.wendellcarvalho.socials
-                  each social in profiles.wendellcarvalho.socials
-                    a(href="", title="title").video-info-profile--social-link 
-                      img(src="/img/icons/icon-share--" + social.name + ".svg", alt=social.name)
+                if profiles.wendellcarvalho.links
+                  each social in profiles.wendellcarvalho.links
+                    a(href=social.type.url + social.handle, title="Acessar o " + social.type.name + " de " + profiles.wendellcarvalho.name).video-info-profile--social-link 
+                      img(src="/img/icons/icon-share--" + social.type.meta + ".svg", alt=social.type.name)
 
     include ../sections/footer.pug  
 
