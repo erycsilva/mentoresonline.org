@@ -1,0 +1,29 @@
+/* 
+ * ------------------ 
+ *    DESCRIPTION
+ * ------------------ 
+ * 
+ *    This is the style used for descriptions 
+ *    - Video descriptions
+ *
+ */
+
+ %description {
+  font-family: $font-family--text;
+  font-weight: 400;
+  line-height: 1.4;
+
+  /*
+   * SIZES
+   */
+  &%--big { font-size: 1rem; }
+  &%--medium { font-size: 1rem; }
+  &%--normal { font-size: 1rem; }
+  &%--small { font-size: 1rem; }
+
+  /* 
+   *  COLORS 
+   */
+  &%--dark { color: black; }
+  &%--light { color: rgba(white,.8); }
+}

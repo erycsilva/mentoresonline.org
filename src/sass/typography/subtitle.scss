@@ -1,0 +1,21 @@
+/* 
+ * ------------------ 
+ *    SUB TITLE
+ * ------------------ 
+ * 
+ *    This is the style used for texts that complement the Title. 
+ *    - Section sub-titles
+ *
+ */
+
+%subtitle {
+  font-family: $font-family--text;
+  font-weight: 400;
+  line-height: 1.4;
+
+  /* 
+   *  COLORS 
+   */
+  &%--dark { color: $color--gray; }
+  &%--light { color: rgba(white, .8); }
+}
