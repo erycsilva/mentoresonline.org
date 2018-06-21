@@ -28,7 +28,9 @@
     text-transform: uppercase;
     letter-spacing: 2px;
 
-    color: white;
+    
+    &.--white { color: white; }
+    &.--black { color: black; }
   }
 
   @media screen and (max-width: 767px) {

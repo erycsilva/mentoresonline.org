@@ -5,4 +5,4 @@ header#header.header
 
   include ../components/nav.pug
 
-  button#openNav.header-mobile-button Menu
+  button#openNav(class="header-mobile-button" + (darkBG ? " --white" : " --black")) Menu
