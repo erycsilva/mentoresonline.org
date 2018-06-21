@@ -15,6 +15,9 @@
   transition: all 260ms ease-in-out;
 
   @media screen and (max-width: 480px) {
+    max-height: 320px;
+    min-height: 300px;
+
     margin: .5rem 0;
   }
 
@@ -164,6 +167,12 @@
     }
   }
 
+  @media screen and (max-width: 1024px) {
+    & > .video-card--link {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
   @media screen and (max-width: 480px) {
     & > *:not(.--minicover) {
       visibility: visible;
