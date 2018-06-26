@@ -97,3 +97,30 @@ if (document.querySelector('#series.page')) {
     }
   }
 } 
+
+
+/**
+ * Video Page
+ * 
+ * If is in the Video Page, run the code accordingly.
+ */
+if (document.querySelector('#video.page')) {
+
+  var openVideo = document.getElementById('open-video'),
+      watchTheVideo = document.getElementById('watch-the-video'),
+      closeTheVideo = document.getElementById('close-the-video');
+
+  openVideo.addEventListener('click', function(e){
+    e.preventDefault();
+
+    addClass(watchTheVideo, 'active');
+
+    playVideo();
+  });
+
+  closeTheVideo.addEventListener('click', function() {
+    removeClass(watchTheVideo, 'active');
+
+    pauseVideo();
+  });
+}
