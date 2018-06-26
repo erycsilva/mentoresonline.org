@@ -12,7 +12,7 @@
 
 mixin socialShare(social, share)
   a.social-share--link(
-    href=(share ? social.url : ""), 
+    href=(social.url ? social.url : ""), 
     title="Compartilhe no " + social.name, 
     target="_blank",
     rel='noopener noreferrer')
