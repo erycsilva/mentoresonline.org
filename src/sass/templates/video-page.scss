@@ -179,7 +179,7 @@
         color: $color--gray;
       }
       &--quote {
-        font-size: 1rem;
+        font-size: .9rem;
         line-height: 1.4;
         text-align: center;
 
@@ -194,6 +194,8 @@
         margin: 1rem 0;
 
         &-link {
+          display: flex;
+          
           margin: 0 1rem;
 
           opacity: .4;
@@ -204,6 +206,7 @@
             max-width: 25px;
             max-height: 25px;
             object-fit: contain;
+            object-position: center;
           }
 
           &:hover {
